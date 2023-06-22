@@ -24,6 +24,8 @@ class GraphConvolution(Module):
 
 
 
+
+
     def reset_parameters(self):
         stdv = 1. / math.sqrt(self.weight.size(1))
         self.weight.data.uniform_(-stdv, stdv)
